@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px){
+  .man-products{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+.man-products{
+  
+  
+}
+.suit-card{
+
+  background-color:white;
+  border: 1px solid red;
+  border-radius: 2px;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+  width: 30%;
+  float: left;
+  align-items: center;
+  text-align: center;
+}
+.suit-card img{
+
+  height: 300px;
+  width: 400px;
+ 
+
+}
+.suit-card:hover{
+  opacity: .7;
+ 
+}
