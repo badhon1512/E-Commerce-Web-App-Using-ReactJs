@@ -16,12 +16,30 @@ function Navbar() {
 
 
       <div className="navbar">
-      <Link to='#' className="navbar-icon">
+        <ul>
+
+        <li> <Link to='#' className="navbar-icon">
         <FaIcon.FaBars  onClick={()=>setMenu(!menu)}/>
 
 
-      </Link>
-        <span className="navbar-brand">E-Com App</span>
+      </Link></li>
+      <li>E-com APP</li>
+
+        </ul>
+
+       
+     
+        <ul className={'righ-item'}>
+          
+          
+          <li ><Link to='/login'>Login</Link></li>
+
+        </ul>
+     
+        
+
+        
+      
       
 
 

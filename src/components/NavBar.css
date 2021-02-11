@@ -5,6 +5,14 @@
   align-items: center;
   justify-content: start;
 }
+.navbar li{
+
+  float: left;
+}
+.login-li{
+  float: right;
+
+}
 .navbar-icon, .navbar-brand{
   color: aliceblue;
   font-size: 30px;
@@ -62,4 +70,13 @@ background-color: #fff;
   height: auto;
   padding: 0px;
   
+}
+.righ-item li{
+  list-style-type: none;
+  float: right;
+  color: #fff;
+}
+.righ-item li a{
+  
+  text-decoration: none;
 }

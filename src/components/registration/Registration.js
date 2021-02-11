@@ -16,6 +16,8 @@ function Registration() {
   const handleSubmit=(e)=>{
 
     e.preventDefault();
+    let data={name:'',email:'',password:''}
+    console.log(blankValue)
     setBlankValue({name:'',email:'',password:''})
 
     if(person.name&&person.email&&person.password)
@@ -25,15 +27,25 @@ function Registration() {
     else{
       if(person.name==='')
       {
-          setBlankValue({...blankValue,'name':'please enter your name'})
-          console.log(blankValue)
+        data.name='please enter your name'
+          
+          //console.log(blankValue)
+         // alert('name')
       }
       if(person.email==='')
       {
-          setBlankValue({...blankValue,'email':'please enter your email'})
+        data.email='please enter your email'
+          //setBlankValue({...blankValue,'email':'please enter your email'})
+         // alert('email')
+      }
+      if(person.password==='')
+      {
+        data.password='please enter password'
+         // setBlankValue({...blankValue,'password':'please enter password'})
       }
       
     }
+    setBlankValue(data)
     console.log(blankValue)
   }
 
@@ -48,9 +60,9 @@ function Registration() {
         <input type='text' onChange={handleChange} value={person.email} id='email' name='email' placeholder='email' className='form-control' /> 
         <label>{blankValue.email}</label><br/>
         <input type='password' onChange={handleChange} value={person.password} id='password' name='password' placeholder='password' className='form-control' /> 
-        <label>Please Inter email</label><br/>
+        <label>{blankValue.password}</label><br/>
         <input type='password' id='c_password' name='c_password' placeholder='Confirm password' className='form-control' /> 
-        <label>Please Inter email</label><br/>
+      
 
         <button onClick={handleSubmit}  className='form-control btn btn-primary' type='submit'>Sign Up</button>
 
